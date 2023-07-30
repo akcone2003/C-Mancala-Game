@@ -12,5 +12,3 @@ When a player tries to take their turn, but cannot do so because their side has 
 The AI Breakdown
 
 The AI player utilizes a minmax algorithm that searches the game tree for the best play available in any given turn. The minimax algorithm will take the best move according to an evaluation function that computes the difference between the number of beans in each player’s pot. It will preference moves that result in a greater difference between the pots, which has different values based on which side the player is. For South, it will preference higher values (since the function is modeled for South). However, for North, it will preference lower values, since these are bad for South which makes them good for North. It is limited by a depth variable to keep within a certain time limit, but it can be changed to search many more or many less levels of the game tree. 
-
-![image](https://github.com/akcone2003/C-Mancala-Game/assets/136214139/5edf5a13-3d0a-47b7-b9c9-340d2079aff8)
